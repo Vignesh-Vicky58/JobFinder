@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Relevant Jobs</title>
+</head>
+<body>
+    <h2>Relevant Jobs</h2>
+    <ul>
+    {% for job in jobs %}
+        <li>
+            <strong>{{ job[0] }}</strong><br>
+            {{ job[1] }}<br>
+            Skills: {{ job[2] }}
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
